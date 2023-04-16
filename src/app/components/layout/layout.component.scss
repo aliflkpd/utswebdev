@@ -1,0 +1,12 @@
+
+.content {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  direction: row;
+
+
+.router-outlet{
+  margin-top: 50px;
+}
+}

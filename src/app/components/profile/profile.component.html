@@ -1,0 +1,47 @@
+<div class="profilepage">
+  <div class="profile">
+      <ul>
+        <li>
+          <span>Name : {{ name }}</span>
+        </li>
+        <li>
+          <span>Student ID : {{ id }}</span>
+        </li>
+        <li>
+          <span>Major : {{ major }}</span>
+        </li>
+      </ul>
+  </div>
+
+  <div  class="profile-settings">
+  <p> input your data here</p>
+  <ul>
+    <li>
+      <input
+        type="text"
+        placeholder="Name"
+        [(ngModel)]="inname"
+      />
+    </li>
+
+    <li>
+      <input
+        type="text"
+        placeholder="Id"
+        [(ngModel)]="inid"
+      />
+    </li>
+    <li>
+      <input
+        type="text"
+        placeholder="Major"
+        [(ngModel)]="inmajor"
+      />
+    </li>
+  </ul>
+  <button (click)="onProfile()" class="btn btn-primary">Save</button>
+  </div>
+</div>
+
+
+
